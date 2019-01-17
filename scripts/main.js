@@ -12,98 +12,87 @@ function loadJSON(callback) {
 
 var app = new Vue({
     el: '#app',
-data: {
-    beasts: [],
-    circle: '',
-    level: 1,
-    view: {
-        text: 'View All',
-        all: false,
+    data: {
+        beasts: [],
+        circle: '',
+        level: 1,
+        view: {
+            text: 'View All',
+            all: false,
+        },
+        search: '',
     },
-    search: '',
-},
-watch: {
-    search: function() {
-        console.log(this.search);
-    },
-    circle: function() {
-        if(this.circle) {
-        console.log(this.view.all);
-            this.view.all = false;
+    watch: {
+        search: function() {
+            console.log(this.search);
+        },
+        circle: function() {
+            if(this.circle) {
+            console.log(this.view.all);
+                this.view.all = false;
+            }
+        },
+        'view.all': function() {
+            if(this.view.all) {
+                this.circle = '';
+                this.view.text = 'Clear All';
+            }
+            else {
+                this.view.text = 'View All';
+            }
         }
     },
-    'view.all': function() {
-         if(this.view.all) {
-            this.circle = '';
-                            this.view.text = 'Clear All';
-                 }
-                 else {
-                          this.view.text = 'View All';
-                 }
-    }
-},
-methods: {
-    increment: function() {
-        if (this.level < 20)
-            this.level += 1;
+    methods: {
+        increment: function() {
+            if (this.level < 20)
+                this.level += 1;
+        },
+            decrement: function() {
+            if (this.level > 1)
+                this.level -= 1;
+        },
     },
-        decrement: function() {
-        if (this.level > 1)
-            this.level -= 1;
-    },
-},
-computed: {
-filteredBeasts: function() {
-    if(this.view.all) {
-        return this.beasts.filter(function (beast) {
-            return beast.name.toLowerCase().includes(app.search.toLowerCase());
-        });
-    }
-    else{
-    if(this.circle === "Moon"){
-        if(this.level >= 2 && this.level < 4) {
-            return this.beasts.filter(function (beast) {
-                return !beast.speed.includes('fly') && !beast.speed.includes('swim') && beast.challenge <= 1;
-                });
-        }
-        else if(this.level >= 4 && this.level < 6) {
-            return this.beasts.filter(function (beast) {
-                return !beast.speed.includes('fly') && beast.challenge <= 1;
-                                });
-        }
-        else if(this.level >= 6 && this.level < 8){
-            return this.beasts.filter(function (beast) {
-                return !beast.speed.includes('fly') && beast.challenge <= Math.trunc(app.level/2);
-                                });
-        }
-        else if(this.level >= 8){
-            return this.beasts.filter(function (beast) {
-                                        return beast.challenge <= Math.trunc(app.level/2);
-                                });
-        }
-    }
-    else if(this.circle != '') {
-        if(this.level >= 2 && this.level < 4) {
-            return this.beasts.filter(function (beast) {
-                                return !beast.speed.includes('fly') && !beast.speed.includes('swim') && beast.challenge <= .25;
-                            });
-        }
-        else if(this.level >=4 && this.level < 8) {
-            return this.beasts.filter(function (beast) {
-                                        return !beast.speed.includes('fly') && beast.challenge <= .5;
-                                });
-        }
-        else if(this.level >= 8) {
-            return this.beasts.filter(function (beast) {
-                                        return beast.challenge <= 1;
-                                });
-        }
-    }
-    }
+    computed: {
+        filteredBeasts: function() {
+            var no_fly = (beast) => !beast.speed.includes('fly');
+            var no_swim = (beast) => !beast.speed.includes('swim');
+            var challenge_lte = (beast, level) => beast.challenge <= level;
+            var search = (beast, term) => beast.name.toLowerCase().includes(term.toString().toLowerCase() && term.toString() != '');
 
-},
-}
-})
+            var func = (x, y) => false;
+
+            if(!this.view.all) {
+                if(this.circle == 'Moon') {
+                    if(this.level >= 2 && this.level < 4) {
+                        func = (beast) => no_fly(beast) && no_swim(beast) && challenge_lte(beast, 1);
+                    }
+                    else if(this.level >= 4 && this.level < 6){
+                        func = (beast) => no_fly(beast) && challenge_lte(beast, 1);
+                    }
+                    else if(this.level >=6 && this.level < 8){
+                        func = (beast) => no_fly(beast) && challenge_lte(beast, app.level / 2);
+                    }
+                    else if(this.level >= 8){
+                        func = (beast) => challenge_lte(beast, app.level / 2);
+                    }
+                }
+                else if(this.circle == 'Land') {
+                    if(this.level >= 2 && this.level < 4)
+                        func = (beast) => no_fly(beast) && no_swim(beast) && challenge_lte(beast, .25);
+                    else if(this.level >=4 && this.level < 8)
+                        func = (beast) => no_fly(beast) && challenge_lte(beast, .5);
+                    else if(this.level >=8)
+                        func = (beast) => challenge_lte(beast, 1);
+                }
+            }
+            else {
+                func = (x, y) => true;
+            }
+        
+            return this.beasts.filter((beast) => func(beast) && search(beast, this.search));
+        },
+    }
+});
 
 loadJSON(function(response) {
 app.beasts = JSON.parse(response);

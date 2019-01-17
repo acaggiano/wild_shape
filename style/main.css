@@ -4,66 +4,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: .85em;
 }
-main {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 5px;
-}
-main > div {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #333;
-    background-color: #eee;
-    color: #333;
-}
-
-main > div > * {
-    padding: 5px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-}
-
-#tools {
-    justify-content: center;
-    background-color: #eee;
-    padding: 10px 0;
-}
-
-#tools > div {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-#search {
-}
-
-.name { 
-    font-family: 'Raleway', sans-serif;
-    background-color: #333;
-    color: #eee;
-}
-
-.name h4 {
-    margin: 5px;
-}
-
-.acHpSpd {
-    background-color: #ccc;
-}
-
-.actions {
-    flex: 1;
-}
-.stats {
-    text-align: center;
-    background-color: #555;
-    color: #eee;
-}
 
 input[type="radio"] {
     appearance: none;
@@ -119,4 +59,62 @@ input[type=number]::-webkit-inner-spin-button {
     border: 1px solid #333;
     padding: 5px;
     background-color: #eee;
+}
+
+main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+main > div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    background-color: #eee;
+    color: #333;
+}
+
+main > div > * {
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tools {
+    justify-content: center;
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+#tools > div {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.name { 
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #eee;
+}
+
+.name h4 {
+    margin: 5px;
+}
+
+.acHpSpd {
+    background-color: #ccc;
+}
+
+.actions {
+    flex: 1;
+}
+.stats {
+    text-align: center;
+    background-color: #555;
+    color: #eee;
 }
