@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wild Shape Tool</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-	<link href="style/main.css" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-	    <div id="tools" class="row">
-		    <div>
-			<label>Druid Circle: </label>
-		    	<input type="radio" name="circle" id="land" value="Land" v-model="circle">
-			<input type="radio" name="circle" id="moon" value="Moon" v-model="circle">
-		    </div>
-		    <div>
-		    	<label for="druidlevel">Druid Level: </label>
-			<button class="leveling" v-on:click="decrement">-</button>
-		    	<input type="number" id="druidlevel" name="druidlevel"  min="1" max="20" v-model="level">
-			<button class="leveling" v-on:click="increment()">+</button>
-	    	    </div>
-		    <div>
-			    <button id="view-all" v-on:click="view.all = !view.all">{{ view.text }}</button>
-		    </div>
-		<div id="search" class="row">
-			<input type="text" v-model="search">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Wild Shape Tool</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+		<link href="style/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="app">
+			<div id="tools" class="row">
+				<div class="row">
+					<label>Druid Circle: </label>
+					<input type="radio" name="circle" id="land" value="Land" v-model="circle">
+					<input type="radio" name="circle" id="moon" value="Moon" v-model="circle">
+				</div>
+				<div class="row">
+					<label for="druidlevel">Druid Level: </label>
+					<button id="minus" class="leveling" v-on:click="decrement">-</button>
+					<input type="number" id="druidlevel" name="druidlevel" min="1" max="20" v-model="level">
+					<button id="plus" class="leveling" v-on:click="increment()">&plus;</button>
+				</div>
+				<div id="search" class="row">
+					<label for="filter">Filter: </label>
+					<input id="filter" name="filter" type="text" v-model="search">
+				</div>
+				<div class="row">
+					<button id="view-all" v-on:click="view.all = !view.all">{{ view.text }}</button>
+				</div>
+			</div>
+			<div id="message" v-if="message" class="row">
+				<p>{{ message }}</p>
+			</div>
+			<main>
+				<div v-for="beast in filteredBeasts">
+					<div class="name row">
+						<h4>{{ beast.name }}</h4>
+					</div>
+					<div class="acHpSpd row">
+						<div>
+							<b>AC:</b> {{ beast.ac }}</div>
+						<div>
+							<b>HP:</b> {{ beast.hp }}</div>
+						<div>
+							<b>Spd:</b> {{ beast.speed }}</div>
+					</div>
+					<div class="actions">
+						<h3 v-if="beast.traits">Traits</h3>
+						<div v-if="beast.traits" v-html="beast.traits" class="traits">
+						
+						</div>
+						<h3 v-if="beast.actions">Actions</h3>
+						<div v-html="beast.actions">
+							
+						</div>
+					</div>
+					<div class="stats row">
+						<div>STR
+							<br>
+							<small>{{beast.STR_mod }}</small>
+						</div>
+						<div>DEX
+							<br>
+							<small>{{beast.DEX_mod }}</small>
+						</div>
+						<div>CON
+							<br>
+							<small>{{beast.CON_mod }}</small>
+						</div>
+						<div>INT
+							<br>
+							<small>{{beast.INT_mod }}</small>
+						</div>
+						<div>WIS
+							<br>
+							<small>{{beast.WIS_mod }}</small>
+						</div>
+						<div>CHA
+							<br>
+							<small>{{beast.CHA_mod }}</small>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
-	    </div>
-        <main>
-		<div v-for="beast in filteredBeasts">
-			<div class="name row">
-				<h4>{{ beast.name }}</h4>
-			</div>
-			<div class="acHpSpd row">
-				<div><b>AC:</b> {{ beast.ac }}</div>
-				<div><b>HP:</b> {{ beast.hp }}</div>
-				<div><b>Spd:</b> {{ beast.speed }}</div>
-			</div>
-			<div v-html="beast.actions" class="actions">
-			
-			</div>
-			<div class="stats row">
-				<div>STR <br><small>{{beast.STR_mod }}</small></div>
-				<div>DEX <br><small>{{beast.DEX_mod }}</small></div>
-				<div>CON <br><small>{{beast.CON_mod }}</small></div>
-				<div>INT <br><small>{{beast.INT_mod }}</small></div>
-				<div>WIS <br><small>{{beast.WIS_mod }}</small></div>
-				<div>CHA <br><small>{{beast.CHA_mod }}</small></div>
-			</div>
-		</div>
-    	</main>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+
 </html>
