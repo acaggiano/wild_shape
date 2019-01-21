@@ -21,14 +21,16 @@ var app = new Vue({
             all: false,
         },
         search: '',
+        sort: 'name',
+        reverseToggle: false,
     },
     watch: {
-        search: function() {
-            console.log(this.search);
+        level: function() {
+            if(this.level == '')
+                this.level = 2;
         },
         circle: function() {
             if(this.circle) {
-            console.log(this.view.all);
                 this.view.all = false;
             }
         },
@@ -40,25 +42,57 @@ var app = new Vue({
             }
             else {
                 this.view.text = 'View All';
+                this.reverseToggle = false;
                 this.search = '';
             }
-        }
+        },
+        sort: function() {
+            this.reverseToggle = false;
+            this.sortBeasts();
+        },
+        reverseToggle: function() {
+            this.sortBeasts();
+        },
     },
     methods: {
         increment: function() {
             if (this.level < 20)
                 this.level += 1;
+            else
+                this.level = 2;
         },
             decrement: function() {
             if (this.level > 2)
                 this.level -= 1;
+        },
+        sortBeasts: function() {
+            if(this.sort == 'name') {
+                this.beasts = _.orderBy(this.beasts, 'name', this.reverseToggle ? 'desc':'asc');
+            }
+            else if (this.sort == 'size') {
+                this.beasts = _.orderBy(this.beasts, [function(beast) {
+                    var size = {
+                        "Tiny": 1,
+                        "Small": 2,
+                        "Medium": 3,
+                        "Large": 4,
+                        "Huge": 5,
+                        "Gargantuan": 6
+                    };
+    
+                    return size[beast.size];
+                }, 'name'], [this.reverseToggle ? 'desc':'asc', 'asc']);
+            }
+            else if(this.sort == 'challenge') {
+                this.beasts = _.orderBy(this.beasts, [(beast) => parseFloat(beast.challenge), 'name'], [this.reverseToggle ? 'desc':'asc', 'asc']);
+            }
         },
     },
     computed: {
         message: function() {
             if(this.circle == '') {
                 if(this.view.all)
-                    return "All Beasts";
+                    return "Displaying All Beasts";
                 else
                     return "Please select a circle";
             }
@@ -105,9 +139,19 @@ var app = new Vue({
         
             return this.beasts.filter((beast) => func(beast) && search(beast, app.search));
         },
+    },
+    filters: {
+        fraction: function (value) {
+            if(!value) return '';
+            value = value.toString();
+            if(value == '.125') return '1/8';
+            else if(value == '.25') return '1/4';
+            else if(value == '.5') return '1/2';
+            else return value;
+        }
     }
 });
 
 loadJSON(function(response) {
-app.beasts = JSON.parse(response);
+    app.beasts = JSON.parse(response);
 });

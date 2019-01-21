@@ -1,7 +1,8 @@
 [
 {
 "name": "Allosaurus",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "13 Natural Armor",
 "hp": "51 (6d10 + 18)",
 "speed": "60 ft. ",
@@ -27,7 +28,8 @@
  },
 {
 "name": "Ankylosaurus",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "15 Natural",
 "hp": "68 (8d12 + 16)",
 "speed": "30 ft. ",
@@ -51,7 +53,8 @@
  },
 {
 "name": "Ape",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "19 (3d8 + 6)",
 "speed": "30 ft., climb 30 ft. ",
@@ -76,7 +79,8 @@
  },
 {
 "name": "Axe Beak",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "19 (3d10 + 3)",
 "speed": "50 ft. ",
@@ -100,7 +104,8 @@
  },
 {
 "name": "Baboon",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "3 (1d6)",
 "speed": "30 ft., climb 30 ft. ",
@@ -125,7 +130,8 @@
  },
 {
 "name": "Badger",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "3 (1d4 + 1)",
 "speed": "20 ft., burrow 5 ft. ",
@@ -150,7 +156,8 @@
  },
 {
 "name": "Bat",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "1 (1d4 - 1)",
 "speed": "5 ft., fly 30 ft. ",
@@ -175,7 +182,8 @@
  },
 {
 "name": "Black Bear",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "19 (3d8 + 6)",
 "speed": "40 ft., climb 30 ft. ",
@@ -201,7 +209,8 @@
  },
 {
 "name": "Blood Hawk",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "7 (2d6)",
 "speed": "10 ft., fly 60 ft. ",
@@ -227,7 +236,8 @@
  },
 {
 "name": "Boar",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "11 (2d8 + 2)",
 "speed": "40 ft. ",
@@ -252,7 +262,8 @@
  },
 {
 "name": "Brown Bear",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "34 (4d10 + 12)",
 "speed": "40 ft., climb 30 ft. ",
@@ -278,7 +289,8 @@
  },
 {
 "name": "Camel",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "9 ",
 "hp": "15 (2d10 + 4)",
 "speed": "50 ft. ",
@@ -302,7 +314,8 @@
  },
 {
 "name": "Cat",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "2 (1d4)",
 "speed": "40 ft., climb 30 ft. ",
@@ -328,7 +341,8 @@
  },
 {
 "name": "Constrictor Snake",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "13 (2d10 + 2)",
 "speed": "30 ft., swim 30 ft. ",
@@ -352,7 +366,8 @@
  },
 {
 "name": "Crab",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "2 (1d4)",
 "speed": "20 ft., swim 20 ft. ",
@@ -378,7 +393,8 @@
  },
 {
 "name": "Crocodile",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "19 (3d10 + 3)",
 "speed": "20 ft., swim 30 ft. ",
@@ -404,7 +420,8 @@
  },
 {
 "name": "Deer",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "4 (1d8)",
 "speed": "50 ft. ",
@@ -428,7 +445,8 @@
  },
 {
 "name": "Dire Wolf",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "14",
 "hp": "37 (5d10 + 10)",
 "speed": "50 ft. ",
@@ -454,7 +472,8 @@
  },
 {
 "name": "Draft Horse",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "19 (3d10 + 3)",
 "speed": "40 ft. ",
@@ -478,7 +497,8 @@
  },
 {
 "name": "Eagle",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "3 (1d6)",
 "speed": "10 ft., fly 60 ft. ",
@@ -504,7 +524,8 @@
  },
 {
 "name": "Elephant",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "76 (8d12 + 24)",
 "speed": "40 ft. ",
@@ -529,7 +550,8 @@
  },
 {
 "name": "Elk",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "13 (2d10 + 2)",
 "speed": "50 ft. ",
@@ -554,7 +576,8 @@
  },
 {
 "name": "Flying Snake",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "14 ",
 "hp": "5 (2d4)",
 "speed": "30 ft., fly 60 ft., swim 30 ft. ",
@@ -579,7 +602,8 @@
  },
 {
 "name": "Frog",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "1 (1d4 - 1)",
 "speed": "20 ft., swim 20 ft. ",
@@ -604,7 +628,8 @@
  },
 {
 "name": "Giant Ape",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "157 (15d12 + 60)",
 "speed": "40 ft., climb 40 ft. ",
@@ -629,7 +654,8 @@
  },
 {
 "name": "Giant Badger",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "13 (2d8 + 4)",
 "speed": "30 ft., burrow 10 ft. ",
@@ -654,7 +680,8 @@
  },
 {
 "name": "Giant Bat",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "22 (4d10)",
 "speed": "10 ft., fly 60 ft. ",
@@ -679,7 +706,8 @@
  },
 {
 "name": "Giant Boar",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "42 (5d10 + 15)",
 "speed": "40 ft. ",
@@ -704,7 +732,8 @@
  },
 {
 "name": "Giant Centipede",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "4 (1d6 + 1)",
 "speed": "30 ft., climb 30 ft. ",
@@ -728,7 +757,8 @@
  },
 {
 "name": "Giant Constrictor Snake",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "60 (8d12 + 8)",
 "speed": "30 ft., swim 30 ft. ",
@@ -753,7 +783,8 @@
  },
 {
 "name": "Giant Crab",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "15",
 "hp": "13 (3d8)",
 "speed": "30 ft., swim 30 ft. ",
@@ -779,7 +810,8 @@
  },
 {
 "name": "Giant Crocodile",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "14",
 "hp": "85 (9d12 + 27)",
 "speed": "30 ft., swim 50 ft. ",
@@ -805,7 +837,8 @@
  },
 {
 "name": "Giant Eagle",
-"meta": "Large beast, neutral good",
+"size": "Large",
+"alignment": "neutral good",
 "ac": "13 ",
 "hp": "26 (4d10 + 4)",
 "speed": "10 ft., fly 80 ft. ",
@@ -831,7 +864,8 @@
  },
 {
 "name": "Giant Elk",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "14",
 "hp": "42 (5d12 + 10)",
 "speed": "60 ft. ",
@@ -857,7 +891,8 @@
  },
 {
 "name": "Giant Fire Beetle",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "4 (1d6 + 1)",
 "speed": "30 ft. ",
@@ -882,7 +917,8 @@
  },
 {
 "name": "Giant Frog",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "18 (4d8)",
 "speed": "30 ft., swim 30 ft. ",
@@ -908,7 +944,8 @@
  },
 {
 "name": "Giant Goat",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "19 (3d10 + 3)",
 "speed": "40 ft. ",
@@ -933,7 +970,8 @@
  },
 {
 "name": "Giant Hyena",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "45 (6d10 + 12)",
 "speed": "50 ft. ",
@@ -959,7 +997,8 @@
  },
 {
 "name": "Giant Lizard",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "19 (3d10 + 3)",
 "speed": "30 ft., climb 30 ft. ",
@@ -983,7 +1022,8 @@
  },
 {
 "name": "Giant Octopus",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "52 (8d10 + 8)",
 "speed": "10 ft., swim 60 ft. ",
@@ -1009,7 +1049,8 @@
  },
 {
 "name": "Giant Owl",
-"meta": "Large beast, neutral",
+"size": "Large",
+"alignment": "neutral",
 "ac": "12 ",
 "hp": "19 (3d10 + 3)",
 "speed": "5 ft., fly 60 ft. ",
@@ -1035,7 +1076,8 @@
  },
 {
 "name": "Giant Poisonous Snake",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "14 ",
 "hp": "11 (2d8 + 2)",
 "speed": "30 ft., swim 30 ft. ",
@@ -1060,7 +1102,8 @@
  },
 {
 "name": "Giant Rat",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "7 (2d6)",
 "speed": "30 ft. ",
@@ -1085,7 +1128,8 @@
  },
 {
 "name": "Giant Scorpion",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "15",
 "hp": "52 (7d10 + 14)",
 "speed": "40 ft. ",
@@ -1109,7 +1153,8 @@
  },
 {
 "name": "Giant Sea Horse",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "16 (3d10)",
 "speed": "0 ft., swim 40 ft. ",
@@ -1134,7 +1179,8 @@
  },
 {
 "name": "Giant Shark",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "126 (11d12 + 55)",
 "speed": "0 ft., swim 50 ft. ",
@@ -1160,7 +1206,8 @@
  },
 {
 "name": "Giant Spider",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "14",
 "hp": "26 (4d10 + 4)",
 "speed": "30 ft., climb 30 ft. ",
@@ -1186,7 +1233,8 @@
  },
 {
 "name": "Giant Toad",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "39 (6d10 + 6)",
 "speed": "20 ft., swim 40 ft. ",
@@ -1211,7 +1259,8 @@
  },
 {
 "name": "Giant Vulture",
-"meta": "Large beast, neutral",
+"size": "Large",
+"alignment": "neutral",
 "ac": "10 ",
 "hp": "22 (3d10 + 6)",
 "speed": "10 ft., fly 60 ft. ",
@@ -1237,7 +1286,8 @@
  },
 {
 "name": "Giant Wasp",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "13 (3d8)",
 "speed": "10 ft., fly 50 ft. ",
@@ -1261,7 +1311,8 @@
  },
 {
 "name": "Giant Weasel",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "9 (2d8)",
 "speed": "40 ft. ",
@@ -1287,7 +1338,8 @@
  },
 {
 "name": "Giant Wolf Spider",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "11 (2d8 + 2)",
 "speed": "40 ft., climb 40 ft. ",
@@ -1313,7 +1365,8 @@
  },
 {
 "name": "Goat",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "4 (1d8)",
 "speed": "40 ft. ",
@@ -1338,7 +1391,8 @@
  },
 {
 "name": "Hawk",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "1 (1d4 - 1)",
 "speed": "10 ft., fly 60 ft. ",
@@ -1364,7 +1418,8 @@
  },
 {
 "name": "Hunter Shark",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "45 (6d10 + 12)",
 "speed": "0 ft., swim 40 ft. ",
@@ -1390,7 +1445,8 @@
  },
 {
 "name": "Hyena",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "5 (1d8 + 1)",
 "speed": "50 ft. ",
@@ -1416,7 +1472,8 @@
  },
 {
 "name": "Jackal",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "3 (1d6)",
 "speed": "40 ft. ",
@@ -1442,7 +1499,8 @@
  },
 {
 "name": "Killer Whale",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "90 (12d12 + 12)",
 "speed": "0 ft., swim 60 ft. ",
@@ -1468,7 +1526,8 @@
  },
 {
 "name": "Lion",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "26 (4d10 + 4)",
 "speed": "50 ft. ",
@@ -1494,7 +1553,8 @@
  },
 {
 "name": "Lizard",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "2 (1d4)",
 "speed": "20 ft., climb 20 ft. ",
@@ -1518,7 +1578,8 @@
  },
 {
 "name": "Mammoth",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "126 (11d12 + 55)",
 "speed": "40 ft. ",
@@ -1543,7 +1604,8 @@
  },
 {
 "name": "Mastiff",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "5 (1d8 + 1)",
 "speed": "40 ft. ",
@@ -1569,7 +1631,8 @@
  },
 {
 "name": "Mule",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "11 (2d8 + 2)",
 "speed": "40 ft. ",
@@ -1594,7 +1657,8 @@
  },
 {
 "name": "Octopus",
-"meta": "Small beast, unaligned",
+"size": "Small",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "3 (1d6)",
 "speed": "5 ft., swim 30 ft. ",
@@ -1620,7 +1684,8 @@
  },
 {
 "name": "Owl",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "1 (1d4 - 1)",
 "speed": "5 ft., fly 60 ft. ",
@@ -1646,7 +1711,8 @@
  },
 {
 "name": "Panther",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "13 (3d8)",
 "speed": "50 ft., climb 40 ft. ",
@@ -1672,7 +1738,8 @@
  },
 {
 "name": "Plesiosaurus",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "68 (8d10 + 24)",
 "speed": "20 ft., swim 40 ft. ",
@@ -1698,7 +1765,8 @@
  },
 {
 "name": "Poisonous Snake",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "2 (1d4)",
 "speed": "30 ft., swim 30 ft. ",
@@ -1722,7 +1790,8 @@
  },
 {
 "name": "Polar Bear",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "42 (5d10 + 15)",
 "speed": "40 ft., swim 30 ft. ",
@@ -1748,7 +1817,8 @@
  },
 {
 "name": "Pony",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "11 (2d8 + 2)",
 "speed": "40 ft. ",
@@ -1772,7 +1842,8 @@
  },
 {
 "name": "Pteranodon",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "13 Natural Armor",
 "hp": "13 (3d8)",
 "speed": "10 ft., fly 60 ft. ",
@@ -1797,7 +1868,8 @@
  },
 {
 "name": "Quipper",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "1 (1d4 - 1)",
 "speed": "0 ft., swim 40 ft. ",
@@ -1822,7 +1894,8 @@
  },
 {
 "name": "Rat",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "1 (1d4 - 1)",
 "speed": "20 ft. ",
@@ -1847,7 +1920,8 @@
  },
 {
 "name": "Raven",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "1 (1d4 - 1)",
 "speed": "10 ft., fly 50 ft. ",
@@ -1873,7 +1947,8 @@
  },
 {
 "name": "Reef Shark",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "12",
 "hp": "22 (4d8 + 4)",
 "speed": "0 ft., swim 40 ft. ",
@@ -1899,7 +1974,8 @@
  },
 {
 "name": "Rhinoceros",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "45 (6d10 + 12)",
 "speed": "40 ft. ",
@@ -1924,7 +2000,8 @@
  },
 {
 "name": "Riding Horse",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "13 (2d10 + 2)",
 "speed": "60 ft. ",
@@ -1948,7 +2025,8 @@
  },
 {
 "name": "Saber-Toothed Tiger",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "52 (7d10 + 14)",
 "speed": "40 ft. ",
@@ -1974,7 +2052,8 @@
  },
 {
 "name": "Scorpion",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "11",
 "hp": "1 (1d4 - 1)",
 "speed": "10 ft. ",
@@ -1998,7 +2077,8 @@
  },
 {
 "name": "Sea Horse",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "1 (1d4 - 1)",
 "speed": "0 ft., swim 20 ft. ",
@@ -2022,7 +2102,8 @@
  },
 {
 "name": "Spider",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "1 (1d4 - 1)",
 "speed": "20 ft., climb 20 ft. ",
@@ -2048,7 +2129,8 @@
  },
 {
 "name": "Stirge",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "14",
 "hp": "2 (1d4)",
 "speed": "10 ft., fly 40 ft. ",
@@ -2072,7 +2154,8 @@
  },
 {
 "name": "Tiger",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "12 ",
 "hp": "37 (5d10 + 10)",
 "speed": "40 ft. ",
@@ -2098,7 +2181,8 @@
  },
 {
 "name": "Triceratops",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "95 (10d12 + 30)",
 "speed": "50 ft. ",
@@ -2123,7 +2207,8 @@
  },
 {
 "name": "Tyrannosaurus Rex",
-"meta": "Huge beast, unaligned",
+"size": "Huge",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "136 (13d12 + 52)",
 "speed": "50 ft. ",
@@ -2148,7 +2233,8 @@
  },
 {
 "name": "Vulture",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "10 ",
 "hp": "5 (1d8 + 1)",
 "speed": "10 ft., fly 50 ft. ",
@@ -2174,7 +2260,8 @@
  },
 {
 "name": "Warhorse",
-"meta": "Large beast, unaligned",
+"size": "Large",
+"alignment": "unaligned",
 "ac": "11 ",
 "hp": "19 (3d10 + 3)",
 "speed": "60 ft. ",
@@ -2199,7 +2286,8 @@
  },
 {
 "name": "Weasel",
-"meta": "Tiny beast, unaligned",
+"size": "Tiny",
+"alignment": "unaligned",
 "ac": "13 ",
 "hp": "1 (1d4 - 1)",
 "speed": "30 ft. ",
@@ -2225,7 +2313,8 @@
  },
 {
 "name": "Wolf",
-"meta": "Medium beast, unaligned",
+"size": "Medium",
+"alignment": "unaligned",
 "ac": "13",
 "hp": "11 (2d8 + 2)",
 "speed": "40 ft. ",
