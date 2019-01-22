@@ -12,8 +12,8 @@
 	</head>
 
 	<body>
-		<div v-cloak id="app">
-			<div id="tools" class="row">
+		<div id="app">
+			<div id="tools" class="row" v-cloak>
 				<div class="row">
 					<label>Druid Circle: </label>
 					<input type="radio" name="circle" id="land" value="Land" v-model="circle">
@@ -44,12 +44,12 @@
 					</div>
 				</div>
 			</div>
-			<div id="message" v-if="message" class="row">
+			<div v-cloak id="message" v-if="message" class="row">
 				<p>{{ message }}</p>
 			</div>
 			
 			<main>
-				<div v-for="beast in filteredBeasts">
+				<div v-cloak v-for="beast in filteredBeasts">
 					<div class="info row">
 						<h4 class="name">{{ beast.name }}</h4>
 						<p class="size"><i>{{ beast.size }} beast, {{ (beast.alignment).replace('.5', '1/2') }}</i></p>
@@ -101,7 +101,7 @@
 					</div>
 				</div>
 			</main>
-			<footer>Wild Shape Tool by <a href="https://github.com/acaggiano" target="_blank">Anthony Caggiano</a>. Beast data taken from the <a href="http://dnd.wizards.com/articles/features/systems-reference-document-srd" target="_blank">5e SRD</a>.</footer>
+			<footer v-cloak>Wild Shape Tool by <a href="https://github.com/acaggiano" target="_blank">Anthony Caggiano</a>. Beast data taken from the <a href="http://dnd.wizards.com/articles/features/systems-reference-document-srd" target="_blank">5e SRD</a>.</footer>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
