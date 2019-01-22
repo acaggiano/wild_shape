@@ -195,6 +195,13 @@ main > div > * {
     color: var(--light-text);
 }
 
+.invisible {
+    visibility: hidden;
+}
+
+[v-cloak] {
+    display: none;
+}
 @media(max-width: 768px) {
 
     #tools > .row {

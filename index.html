@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<div id="app">
+		<div v-cloak id="app">
 			<div id="tools" class="row">
 				<div class="row">
 					<label>Druid Circle: </label>
@@ -20,9 +20,9 @@
 				</div>
 				<div class="row">
 					<label for="druidlevel">Druid Level: </label>
-					<button id="minus" class="leveling" v-on:click="decrement">&minus;</button>
+					<button id="minus" class="leveling" :class="{ invisible: level <= 2 }" v-on:click="decrement">&minus;</button>
 					<input type="number" id="druidlevel" name="druidlevel" min="1" max="20" v-model="level">
-					<button id="plus" class="leveling" v-on:click="increment()">&plus;</button>
+					<button id="plus" class="leveling" :class="{ invisible: level >= 20 }" v-on:click="increment()">&plus;</button>
 				</div>
 				<div id="search" class="row">
 					<label for="filter">Filter: </label>
