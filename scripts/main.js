@@ -118,10 +118,10 @@ var app = new Vue({
                         func = (beast) => no_fly(beast) && challenge_lte(beast, 1);
                     }
                     else if(this.level >=6 && this.level < 8){
-                        func = (beast) => no_fly(beast) && challenge_lte(beast, app.level / 2);
+                        func = (beast) => no_fly(beast) && challenge_lte(beast, app.level / 3);
                     }
                     else if(this.level >= 8 && this.level < 21){
-                        func = (beast) => challenge_lte(beast, app.level / 2);
+                        func = (beast) => challenge_lte(beast, app.level / 3);
                     }
                 }
                 else if(this.circle == 'Land') {
